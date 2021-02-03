@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="ucn_border" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="ucn_awesome" display_order="1"/>
+  </option>	
+  <option option_id="ucn_border_width" edit_format="textbox" data_type="string">
+    <default_value>1px</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="2"/>
+  </option>
+  <option option_id="ucn_border_color" edit_format="textbox" data_type="string">
+    <default_value>#d8d8d8</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="3"/>
+  </option>  
+  <option option_id="ucn_radius" edit_format="textbox" data_type="string">
+    <default_value>5px</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="4"/>
+  </option>  
+  <option option_id="ucn_width" edit_format="textbox" data_type="string">
+    <default_value>50px</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="5"/>
+  </option>
+   <option option_id="ucn_width_subforum" edit_format="textbox" data_type="string">
+    <default_value>30px</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="6"/>
+  </option> 
+   <option option_id="ucn_width_subforum_font" edit_format="textbox" data_type="string">
+    <default_value>18px</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="6"/>
+  </option>   
+  <option option_id="ucn_animated" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="ucn_awesome" display_order="7"/>
+  </option>	
+  <option option_id="ucn_unread" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="ucn_awesome" display_order="8"/>
+  </option>
+  <option option_id="ucn_unread_color" edit_format="textbox" data_type="string">
+    <default_value>#fad7a8</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="9"/>
+  </option>   
+  <option option_id="ucn_svg_sprite" edit_format="textbox" data_type="string">
+    <default_value>./styles/nodes/img/spritemap.png</default_value>
+    <edit_format_params>rows=1</edit_format_params>
+    <relation group_id="ucn_awesome" display_order="10"/>
+  </option>   
+</options>

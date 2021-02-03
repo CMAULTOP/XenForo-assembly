@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="246px" viewBox="0 0 250 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>cta</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="250" height="246"></rect>
+        <linearGradient x1="10.8117989%" y1="38.3813281%" x2="97.2375801%" y2="61.6186719%" id="linearGradient-3">
+            <stop stop-color="#F9C9FF" offset="0%"></stop>
+            <stop stop-color="#8083FB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="46.2181969%" x2="95.0238523%" y2="63.0945796%" id="linearGradient-4">
+            <stop stop-color="#717BFB" offset="0%"></stop>
+            <stop stop-color="#8C8BFC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="46.2181969%" x2="95.0238523%" y2="63.0945796%" id="linearGradient-5">
+            <stop stop-color="#717BFB" offset="0%"></stop>
+            <stop stop-color="#8F8DFC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="91.9055321%" y1="95.8804482%" x2="3.84467512%" y2="5.85469173e-15%" id="linearGradient-6">
+            <stop stop-color="#FBE6FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#F6C8FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="95.3962054%" y1="94.6964865%" x2="-2.22044605e-14%" y2="1.29026817%" id="linearGradient-7">
+            <stop stop-color="#FBE6FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#F6C8FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cta">
+            <g id="Group-5">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-9" fill="#707BFB" xlink:href="#path-1"></use>
+                <g id="Group-4" mask="url(#mask-2)">
+                    <g transform="translate(-188.000000, -68.000000)">
+                        <rect id="Rectangle" stroke="none" fill="url(#linearGradient-3)" fill-rule="evenodd" x="0" y="141" width="390" height="188"></rect>
+                        <circle id="Oval" stroke="none" fill="url(#linearGradient-4)" fill-rule="evenodd" cx="426.5" cy="251.5" r="56.5"></circle>
+                        <circle id="Oval-Copy" stroke="none" fill="url(#linearGradient-4)" fill-rule="evenodd" cx="374.5" cy="102.5" r="80.5"></circle>
+                        <circle id="Oval-Copy-2" stroke="none" fill="url(#linearGradient-5)" fill-rule="evenodd" cx="162.5" cy="58.5" r="58.5"></circle>
+                        <path d="M406.5,232.5 L455,282.5" id="Line" stroke="url(#linearGradient-6)" stroke-width="9" fill="none" stroke-linecap="round"></path>
+                        <path d="M270.5,257.5 L346.5,332.5" id="Line-Copy" stroke="url(#linearGradient-7)" stroke-width="9" fill="none" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

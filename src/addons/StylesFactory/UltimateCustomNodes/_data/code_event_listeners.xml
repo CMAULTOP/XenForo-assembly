@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<code_event_listeners>
+  <listener event_id="entity_structure" execute_order="1" callback_class="StylesFactory\UltimateCustomNodes\Listener" callback_method="nodeEntityStructure" active="1" hint="XF\Entity\Node" description="XF\Entity\Node"/>
+</code_event_listeners>

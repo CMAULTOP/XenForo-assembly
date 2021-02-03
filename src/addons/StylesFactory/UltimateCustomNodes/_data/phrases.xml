@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="option_group.ucn_awesome" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Ultimate Custom Nodes]]></phrase>
+  <phrase title="option_group_description.ucn_awesome" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set images or other font awesome icons for nodes]]></phrase>  
+  <phrase title="option.ucn_border" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Border for image]]></phrase>
+  <phrase title="option_explain.ucn_border" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Do you want to turn on option to set borders for image nodes?]]></phrase>
+  <phrase title="option.ucn_border_width" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Border width]]></phrase>
+  <phrase title="option_explain.ucn_border_width" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set border width for image nodes. Default is 1px]]></phrase>
+  <phrase title="option.ucn_border_color" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Border color]]></phrase>
+  <phrase title="option_explain.ucn_border_color" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set border color. Default #d8d8d8]]></phrase>
+  <phrase title="option.ucn_radius" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Border radius]]></phrase>
+  <phrase title="option_explain.ucn_radius" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set border radius. Default 5px]]></phrase>
+  <phrase title="option.ucn_width" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Icon width]]></phrase>
+  <phrase title="option_explain.ucn_width" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set icon width. Default 50px]]></phrase>
+  <phrase title="option.ucn_animated" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Animation for icon]]></phrase>
+  <phrase title="option_explain.ucn_animated" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Do you want nice animation on your icons?]]></phrase> 
+  <phrase title="new_icons" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Image Node Icon]]></phrase>
+  <phrase title="other_icons" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Font Awesome Node Icon]]></phrase> 
+  <phrase title="how_to_new" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Simply put full link to the image. Example: <u>https://vertiforo.stylesfactory.pl/images/icons/nw.png</u>]]></phrase> 
+  <phrase title="how_to_new_font" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Get code from <a href="https://fontawesome.com/icons">Font Awesome</a> site. It should look like this: &lt;i class="fas fa-volume-down">&lt;/i>]]></phrase>   
+  <phrase title="svg_bg" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[SVG sprite]]></phrase>
+  <phrase title="how_to_svg_bg" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set background position for sprite. Only .svg will work! ]]></phrase>
+  <phrase title="option.ucn_unread_color" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Unread color]]></phrase>
+  <phrase title="option_explain.ucn_unread_color" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set color for unreaded font awesome icons]]></phrase>
+  <phrase title="option.ucn_unread" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Unread icons colors]]></phrase>
+  <phrase title="option_explain.ucn_unread" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Turn on to see difference between unread and read nodes]]></phrase>
+  <phrase title="option.ucn_svg_sprite" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[SVG sprite link]]></phrase>
+  <phrase title="option_explain.ucn_svg_sprite" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Put here link to your spritemap]]></phrase>  
+  <phrase title="admin_navigation.vertiforo_nodes" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Ultimate Forum Nodes]]></phrase>  
+  <phrase title="option.ucn_width_subforum" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Subforum icon size]]></phrase>  
+  <phrase title="option_explain.ucn_width_subforum" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set size for your subforum icons. Will work only on images.]]></phrase>    
+  <phrase title="option.ucn_width_subforum_font" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Subforum font awesome icon size]]></phrase>  
+  <phrase title="option_explain.ucn_width_subforum_font" version_id="29292929" version_string="1.0.1" global_cache="1"><![CDATA[Set size for your subforum icons. Will work only on font awesome.]]></phrase>    
+
+</phrases>

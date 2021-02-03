@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="admin" template="forum_edit" modification_key="ucsone" execution_order="1" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:macro template="node_edit_macros" name="description".*\/>#sU]]></find>
+    <replace><![CDATA[$0
+			<xf:macro template="changerone" name="changerone" arg-node="{$node}" />
+]]></replace>
+  </modification>
+   <modification type="admin" template="category_edit" modification_key="ucstwo" execution_order="2" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:macro template="node_edit_macros" name="description".*\/>#sU]]></find>
+    <replace><![CDATA[$0
+			<xf:macro template="changerone" name="changerone" arg-node="{$node}" />
+]]></replace>
+  </modification>
+   <modification type="admin" template="link_forum_edit" modification_key="ucsthree" execution_order="3" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:macro template="node_edit_macros" name="description".*\/>#sU]]></find>
+    <replace><![CDATA[$0
+			<xf:macro template="changerone" name="changerone" arg-node="{$node}" />
+]]></replace>
+  </modification>   
+   <modification type="admin" template="page_edit" modification_key="ucsfour" execution_order="4" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:macro template="node_edit_macros" name="description".*\/>#sU]]></find>
+    <replace><![CDATA[$0
+			<xf:macro template="changerone" name="changerone" arg-node="{$node}" />
+]]></replace>
+  </modification>
+  <modification type="public" template="node_list_forum" modification_key="th_node_list_forum_nodeIcon_nodes" execution_order="4" enabled="1" action="str_replace">
+  <find><![CDATA[/(node-icon|(subNodeLink))([^"]*".*?>)(?:<i(.*?)>(.*?)<\/i>)?/]]></find>
+<replace><![CDATA[]]></replace>
+</modification>
+  <modification type="public" template="node_list_forum" modification_key="removeicon" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<span class="node-icon" aria-hidden="true"><i></i></span>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon" />]]>
+    </replace> 
+  </modification> 
+  <modification type="public" template="node_list_forum" modification_key="sf_new_icon" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<span class="node-icon" aria-hidden="true">
+				<xf:fa icon="{{ $node.Data.TypeHandler.getTypeIconClass() ?: 'fa-comments' }}" />
+			</span>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon" />]]>
+    </replace> 
+  </modification>   
+    <modification type="public" template="node_list_page" modification_key="th_node_list_page_nodeIcon_nodes" execution_order="4" enabled="1" action="str_replace">
+  <find><![CDATA[/(node-icon|(subNodeLink))([^"]*".*?>)(?:<i(.*?)>(.*?)<\/i>)?/]]></find>
+<replace><![CDATA[]]></replace>
+</modification>  	 
+   <modification type="public" template="node_list_page" modification_key="removeicon_page" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<span class="node-icon" aria-hidden="true"><i></i></span>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon" />]]></replace>
+  </modification>
+    <modification type="public" template="node_list_link_forum" modification_key="th_node_list_link_forum_nodeIcon_nodes" execution_order="4" enabled="1" action="str_replace">
+  <find><![CDATA[/(node-icon|(subNodeLink))([^"]*".*?>)(?:<i(.*?)>(.*?)<\/i>)?/]]></find>
+<replace><![CDATA[]]></replace>
+</modification>     
+   <modification type="public" template="node_list_link_forum" modification_key="removeicon_link" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<span class="node-icon" aria-hidden="true"><i></i></span>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon" />]]></replace>
+   </modification>
+  <modification type="public" template="node_list_category" modification_key="th_node_list_category_nodeIcon_nodes" execution_order="4" enabled="1" action="str_replace">
+  <find><![CDATA[/(node-icon|(subNodeLink))([^"]*".*?>)(?:<i(.*?)>(.*?)<\/i>)?/]]></find>
+<replace><![CDATA[]]></replace>
+</modification>   
+   <modification type="public" template="node_list_category" modification_key="removeicon_category" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<span class="node-icon" aria-hidden="true"><i></i></span>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon" />]]></replace>
+  </modification>
+  <modification type="public" template="PAGE_CONTAINER" modification_key="ultimateicons_add" description="" execution_order="2" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:include template="google_analytics" />#sU]]></find>
+    <replace><![CDATA[
+	<xf:include template="ultimatecustom" />
+]]></replace>
+  </modification>
+   <modification type="public" template="node_list_forum" modification_key="removeicon_vertiforos" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<i class="fas fa-comments"></i>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon_sub" />]]></replace>
+	</modification> 
+   <modification type="public" template="node_list_page" modification_key="removeicon_vertiforos_page" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<i class="fas fa-comments"></i>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon_sub" />]]></replace>
+	</modification>
+   <modification type="public" template="node_list_link_forum" modification_key="removeicon_vertiforos_forum" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<i class="fas fa-comments"></i>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon_sub" />]]></replace>
+	</modification>
+   <modification type="public" template="node_list_category" modification_key="removeicon_vertiforos_category" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<i class="fas fa-comments"></i>]]></find>
+    <replace><![CDATA[<xf:include template="sf_node_icon_sub" />]]></replace>
+	</modification>
+    <modification type="public" template="PAGE_CONTAINER" modification_key="ucn_max_footer" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[{{ phrase('extra_copyright') }}]]></find>
+    <replace><![CDATA[$0
+<br /><a href=""><b></b></a>]]></replace>
+  </modification>
+
+
+   <modification type="public" template="node_list_forum" modification_key="subforum_icons" execution_order="5" enabled="1" action="str_replace">
+    <find><![CDATA[<a href="{{ link('forums', $node) }}" class="subNodeLink subNodeLink--forum {{ $extras.hasNew ? 'subNodeLink--unread' : '' }}">{$node.title}</a>]]></find>
+    <replace><![CDATA[<div class="custom-nodes">
+			<div class="cn-left">
+				<xf:if is="{{ !$node.new_icon.mb.filtersetting AND !$node.font_icon AND !$node.svg_bg|raw }}">
+					<span class="node-icon-fix animated fadeInLeft" aria-hidden="true"><i class="far fa-comments"></i></span>
+				<xf:else />
+					<xf:if is="{{ !$node.new_icon.mb.filtersetting AND !$node.font_icon AND !$node.svg_bg|raw }}">
+						<span class="node-icon animated fadeInLeft" aria-hidden="true"><i></i></span>
+					</xf:if>
+					<xf:if is="{{ $node.new_icon.mb.filtersetting }}">
+						<span class="node-icon" aria-hidden="true" style="width:{$xf.options.ucn_width};">
+							<img src="{$node.new_icon.mb.filtersetting}" style="vertical-align:middle;" <xf:if is="{{ $xf.options.ucn_animated }}">class="animated fadeInLeft"</xf:if>>
+						</span>
+					</xf:if>
+					<xf:if is="{{ $node.font_icon }}">
+						<span class="node-icon-fix animated fadeInLeft" aria-hidden="true">{{ $node.font_icon|raw }}</span>
+					</xf:if>
+					<xf:if is="{{ $node.svg_bg|raw }}">
+						<span class="node-icon-svg icon{$node.node_id} animated fadeInLeft">
+							<img src="{{ $xf.options.ucn_svg_sprite|raw }}#svgView(viewBox({{ $node.svg_bg|raw }}))" alt="" style="height:{{ $xf.options.ucn_width }}; <xf:if is="{{ $xf.options.ucn_radius }}">border-radius:5px;</xf:if> margin-left:5px;">
+						</span>
+					</xf:if>
+				</xf:if>
+			</div>	
+			<div class="cn-right">
+				<a href="{{ link('forums', $node) }}">{$node.title}</a>
+			</div>
+		</div>  ]]>
+	</replace>
+	</modification>
+
+
+</template_modifications>

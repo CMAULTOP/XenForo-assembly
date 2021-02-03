@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="changerone" version_id="29292929" version_string="1.0.0">
+  <![CDATA[
+<xf:macro name="changerone" arg-node="!" arg-name="mb">
+<hr class="formRowSep" />
+<dl class="formRow formRow--input">
+	<dt>
+		<div class="formRow-labelWrapper">
+		<label class="formRow-label">{{ phrase('new_icons') }}</label></div>
+	</dt>
+	<dd>
+		<div class="{$name}">
+			<xf:textbox name="{$name}[filtersetting]" value="{$node.new_icon.{$name}.filtersetting}" />
+			<div class="formRow-explain">{{ phrase('how_to_new') }}</div>
+			<xf:if is="{{ $node.new_icon.mb.filtersetting }}"><br /><img src="{$node.new_icon.mb.filtersetting}"></xf:if>
+		</div>
+	</dd>
+</dl>
+
+<dl class="formRow formRow--input">
+	<dt>
+		<div class="formRow-labelWrapper">
+		<label class="formRow-label">{{ phrase('other_icons') }}</label></div>
+	</dt>
+	<dd>
+		<div class="{$name}">
+			<xf:textbox name="node[font_icon]" value="{$node.font_icon}" hint="{{ phrase('how_to_new_font') }}" />
+			<div class="formRow-explain">{{ phrase('how_to_new_font') }}</div>
+		</div>
+	</dd>	
+</dl>
+
+<dl class="formRow formRow--input">
+	<dt>
+		<div class="formRow-labelWrapper">
+		<label class="formRow-label">{{ phrase('svg_bg') }}</label></div>
+	</dt>
+	<dd>
+		<div class="{$name}" style="padding-bottom:10px;">
+			<xf:textbox name="node[svg_bg]" value="{$node.svg_bg}" hint="{{ phrase('how_to_svg_bg') }}" />
+			<div class="formRow-explain">{{ phrase('how_to_svg_bg') }}</div>
+		</div>		
+	</dd>	
+</dl>
+</xf:macro>
+]]>
+</template>
+  <template type="public" title="ultimatecustom" version_id="29292929" version_string="1.0.0">
+  <![CDATA[
+<style>
+.cn-left .node-icon-svg, .cn-left .node-icon-fix {
+	width:{{ $xf.options.ucn_width_subforum }} !important;
+}	
+	
+.cn-left .node-icon-svg img{
+	height:{{ $xf.options.ucn_width_subforum }} !important;
+}
+
+.cn-left .node-icon {
+	padding:0px !important;
+	width:{{ $xf.options.ucn_width_subforum }} !important;
+}
+
+.cn-right {
+	padding-top: 5px;
+}
+	
+.node-body img {
+	display: flex;
+	width: 150px;
+}	
+
+.cn-left img {
+	display: inline-flex !important;
+}
+
+.node-icon-svg {
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: {{ $xf.options.ucn_width }};
+  padding-top:5px;
+  flex-shrink: 0;
+}
+
+<xf:if is="{{ $xf.options.ucn_unread }}">
+.node--read .node-icon-svg, .node--read .node-icon img, .custom-nodes .node-icon-svg, .custom-nodes .node-icon, .custom-nodes .node-icon-fix {
+	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+}
+
+</xf:if>
+
+
+.custom-nodes {
+	display:flex; 
+  align-items:center; 
+  justify-content:start;
+}
+
+.custom-nodes .node-icon, .custom-nodes .node-icon-fix {
+	padding: 10px 0 10px 10px !important;
+}
+
+
+.custom-nodes .node-icon-fix i {
+	font-size:{{ $xf.options.ucn_width_subforum_font }};
+}
+
+.cn-left, 
+.cn-right {
+	display:inline-flex; 
+  vertical-align:middle;
+}
+
+.cn-left 	.node-icon i {
+		font-size:16px;
+}
+
+.cn-right {
+	padding-left:10px;
+}
+
+.node-main-empty {
+	margin-left:1% !important;
+	padding-left: 1% !important;
+}
+.nd-icon img {
+	max-width:{{ $xf.options.ucn_width }} !important;
+}
+<xf:if is="{{ $xf.options.ucn_radius }}">
+.node-icon-fix-verti img {border-radius:5px;}
+</xf:if>
+.node-icon-fix i:before {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #d5eaf9;
+}
+
+.node--unread .node-icon-fix i:before {color:{{ $xf.options.ucn_unread_color|raw }} !important;}
+  
+.node-icon-fix i {
+    display: block;
+    line-height: 1.125;
+    font-size: 32px;
+}  
+.node-icon-fix {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 46px;
+    padding: 10px 0 10px 10px;
+}	
+.node-icon-fix-verti {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}	
+.node-body img {max-width:auto;  <xf:if is="{{ $xf.options.ucn_radius }}">border-radius:5px;</xf:if> <xf:if is="{{ $xf.options.ucn_border }}">border:{{ $xf.options.ucn_border_width }} solid {{ $xf.options.ucn_border_color }};</xf:if>}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+</style>
+]]>
+</template>
+
+  <template type="public" title="sf_node_icon" version_id="29292929" version_string="1.0.0">
+  <![CDATA[
+    <xf:if is="is_addon_active('StylesFactory/UltimateCustomNodes', 146050954, '<')">
+      <xf:if is="{{ !$node.new_icon.mb.filtersetting AND !$node.font_icon AND !$node.svg_bg|raw }}">
+          <span class="node-icon animated fadeInLeft" aria-hidden="true"><i></i></span>
+      </xf:if>
+    </xf:if>
+    <xf:if is="is_addon_active('StylesFactory/UltimateCustomNodes', 146050954)">
+      <xf:if is="{{ !$node.new_icon.mb.filtersetting AND !$node.font_icon AND !$node.svg_bg|raw }}">
+          <span class="node-icon animated fadeInLeft" aria-hidden="true">
+            <xf:fa icon="{{ $node.Data.TypeHandler.getTypeIconClass() ?: 'fa-comments' }}" />
+          </span>
+      </xf:if>
+    </xf:if>
+    <xf:if is="{{ $node.new_icon.mb.filtersetting }}">
+        <span class="node-icon" aria-hidden="true" style="width:{$xf.options.ucn_width};">
+          <img src="{$node.new_icon.mb.filtersetting}" style="vertical-align:middle;" <xf:if is="{{ $xf.options.ucn_animated }}">class="animated fadeInLeft"</xf:if>>
+        </span>
+    </xf:if>
+	  <xf:if is="{{ $node.font_icon }}">
+        <span class="node-icon-fix animated fadeInLeft" aria-hidden="true">{{ $node.font_icon|raw }}</span>
+    </xf:if>
+    <xf:if is="{{ $node.svg_bg|raw }}">
+      <span class="node-icon-svg icon{$node.node_id} animated fadeInLeft">
+		    <img src="{{ $xf.options.ucn_svg_sprite|raw }}#svgView(viewBox({{ $node.svg_bg|raw }}))" alt="" style="height:{{ $xf.options.ucn_width }}; <xf:if is="{{ $xf.options.ucn_radius }}">border-radius:5px;</xf:if> margin-left:5px;">
+	    </span>
+    </xf:if>
+]]>
+</template>
+
+
+<template type="public" title="sf_node_icon_sub" version_id="29292929" version_string="1.0.0">
+ <![CDATA[
+ <xf:if is="{{ !$node.new_icon.mb.filtersetting AND !$node.font_icon }}"><i class="fas fa-comments"></i></xf:if><xf:if is="{{ $node.new_icon.mb.filtersetting }}"><span class="node-icon-fix-verti" aria-hidden="true"><img src="{$node.new_icon.mb.filtersetting}" style="vertical-align:middle;" <xf:if is="{{ $xf.options.ucn_animated }}">class="animated fadeInLeft"</xf:if>></span></xf:if>
+	<xf:if is="{{ $node.font_icon }}"><div <xf:if is="{{ $xf.options.ucn_animated }}">class="animated fadeInLeft"</xf:if>>{{ $node.font_icon|raw }}</div></xf:if>
+]]>
+</template>
+
+</templates>
